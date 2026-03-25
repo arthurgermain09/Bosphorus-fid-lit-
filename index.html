@@ -8,20 +8,20 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--gold:#D8C286;--gold-dark:#b8a066;--black:#111;--dark:#1a1a1a;--gray:#2a2a2a;--text:#666;--white:#fff}
-body{font-family:'Open Sans',sans-serif;background:var(--black);color:var(--white);min-height:100vh;max-width:430px;margin:0 auto}
+body{font-family:"Open Sans",sans-serif;background:var(--black);color:var(--white);min-height:100vh;max-width:430px;margin:0 auto}
 .top-bar{background:var(--dark);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gold);position:sticky;top:0;z-index:100}
 .top-bar img{height:45px}
-.greeting{font-family:'Playfair Display',serif;color:var(--gold);font-size:13px;text-align:right}
+.greeting{font-family:"Playfair Display",serif;color:var(--gold);font-size:13px;text-align:right}
 .greeting span{display:block;font-size:16px;font-weight:700}
 .page{display:none;padding-bottom:80px}
 .page.active{display:block}
 .hero-card{background:linear-gradient(135deg,var(--dark),#2a2010);margin:16px;border-radius:20px;padding:24px;border:1px solid var(--gold);text-align:center}
 .card-label{font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:6px}
-.card-name{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
-.points-big{font-family:'Playfair Display',serif;font-size:64px;font-weight:700;color:var(--gold);line-height:1}
+.card-name{font-family:"Playfair Display",serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.points-big{font-family:"Playfair Display",serif;font-size:64px;font-weight:700;color:var(--gold);line-height:1}
 .points-label{font-size:12px;color:var(--text);text-transform:uppercase;margin-top:4px}
 .progress-section{margin:16px}
-.progress-title{font-family:'Playfair Display',serif;color:var(--gold);font-size:16px;margin-bottom:12px}
+.progress-title{font-family:"Playfair Display",serif;color:var(--gold);font-size:16px;margin-bottom:12px}
 .next-reward-bar{background:var(--gray);border-radius:12px;padding:16px;border:1px solid #333}
 .reward-info{display:flex;justify-content:space-between;margin-bottom:10px}
 .bar-bg{background:#111;border-radius:50px;height:8px;overflow:hidden}
@@ -35,9 +35,9 @@ body{font-family:'Open Sans',sans-serif;background:var(--black);color:var(--whit
 .reward-cost{font-size:11px;color:var(--gold);font-weight:600}
 .history-list{margin:16px}
 .history-item{background:var(--gray);border-radius:12px;padding:14px 16px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;border-left:3px solid var(--gold)}
-.h-pts{font-family:'Playfair Display',serif;font-size:18px;color:var(--gold);font-weight:700}
+.h-pts{font-family:"Playfair Display",serif;font-size:18px;color:var(--gold);font-weight:700}
 .scan-btn{background:linear-gradient(135deg,var(--gold-dark),var(--gold));color:var(--black);border:none;padding:16px;border-radius:50px;font-size:14px;font-weight:700;cursor:pointer;text-transform:uppercase;width:100%}
-.section-title{font-family:'Playfair Display',serif;font-size:20px;color:var(--gold);margin:20px 16px 12px;padding-bottom:8px;border-bottom:1px solid #333}
+.section-title{font-family:"Playfair Display",serif;font-size:20px;color:var(--gold);margin:20px 16px 12px;padding-bottom:8px;border-bottom:1px solid #333}
 .bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;background:var(--dark);border-top:1px solid var(--gold);display:flex;z-index:200}
 .nav-item{flex:1;padding:12px 8px;text-align:center;cursor:pointer;color:var(--text);border:none;background:none}
 .nav-item.active{color:var(--gold)}
@@ -49,7 +49,7 @@ body{font-family:'Open Sans',sans-serif;background:var(--black);color:var(--whit
 .avatar{width:80px;height:80px;border-radius:50%;background:var(--gold);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:36px}
 .stat-row{display:flex;gap:12px;margin:16px}
 .stat-box{flex:1;background:var(--gray);border-radius:14px;padding:16px;text-align:center;border:1px solid #333}
-.stat-val{font-family:'Playfair Display',serif;font-size:24px;color:var(--gold);font-weight:700}
+.stat-val{font-family:"Playfair Display",serif;font-size:24px;color:var(--gold);font-weight:700}
 .stat-lbl{font-size:11px;color:var(--text);text-transform:uppercase;margin-top:4px}
 .level-badge{display:inline-flex;background:linear-gradient(135deg,var(--gold-dark),var(--gold));color:var(--black);padding:6px 16px;border-radius:50px;font-size:12px;font-weight:700;margin-top:10px}
 .buy-btns{margin:0 16px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -63,7 +63,7 @@ body{font-family:'Open Sans',sans-serif;background:var(--black);color:var(--whit
 <body>
 <div class="top-bar">
   <img src="https://snack-bosphorus.be/wp-content/uploads/2023/06/logo-snack-bosphorus.png" alt="Bosphorus" onerror="this.style.display='none'">
-  <div class="greeting">Bonjour,<span id="uN">Yasmine</span></div>
+  <div class="greeting">Bonjour, <span id="uN">Yasmine</span></div>
 </div>
 <div class="toast" id="toast"></div>
 
@@ -88,10 +88,10 @@ body{font-family:'Open Sans',sans-serif;background:var(--black);color:var(--whit
   </div>
   <div class="section-title">Simuler un achat</div>
   <div class="buy-btns">
-    <button class="buy-btn" onclick="aP(6.5,'Mitraillette')">Mitraillette<br><small style="color:var(--gold)">+6 pts</small></button>
-    <button class="buy-btn" onclick="aP(8,'Specialite')">Specialite<br><small style="color:var(--gold)">+8 pts</small></button>
-    <button class="buy-btn" onclick="aP(3,'Frites')">Frites<br><small style="color:var(--gold)">+3 pts</small></button>
-    <button class="buy-btn" onclick="aP(17,'Grillade')">Grillade<br><small style="color:var(--gold)">+17 pts</small></button>
+    <button class="buy-btn" onclick="addPoints(6.5,'Mitraillette')">Mitraillette<br><small style="color:var(--gold)">+6 pts</small></button>
+    <button class="buy-btn" onclick="addPoints(8,'Specialite')">Specialite<br><small style="color:var(--gold)">+8 pts</small></button>
+    <button class="buy-btn" onclick="addPoints(3,'Frites')">Frites<br><small style="color:var(--gold)">+3 pts</small></button>
+    <button class="buy-btn" onclick="addPoints(17,'Grillade')">Grillade<br><small style="color:var(--gold)">+17 pts</small></button>
   </div>
 </div>
 
@@ -130,7 +130,7 @@ body{font-family:'Open Sans',sans-serif;background:var(--black);color:var(--whit
     </svg>
   </div>
   <p style="font-family:'Playfair Display',serif;font-size:13px;color:var(--gold);letter-spacing:3px;text-align:center;margin-bottom:16px">BSP-2024-YBE-247</p>
-  <div style="margin:0 16px 20px"><button class="scan-btn" onclick="sS()">Scanner un recu</button></div>
+  <div style="margin:0 16px 20px"><button class="scan-btn" onclick="simulateScan()">Scanner un recu</button></div>
   <div class="section-title">Comment ca marche</div>
   <div style="margin:0 16px;display:flex;flex-direction:column;gap:10px;margin-bottom:16px">
     <div style="background:var(--gray);border-radius:12px;padding:14px;border:1px solid #333"><div style="font-size:13px;font-weight:600">1 euro = 1 point</div><div style="font-size:12px;color:var(--text);margin-top:3px">Chaque euro depense = 1 point</div></div>
@@ -156,88 +156,111 @@ body{font-family:'Open Sans',sans-serif;background:var(--black);color:var(--whit
 </div>
 
 <nav class="bottom-nav">
-  <button class="nav-item active" onclick="sP2('home',this)"><span class="nav-icon">&#127968;</span><span class="nav-label">Accueil</span></button>
-  <button class="nav-item" onclick="sP2('rewards',this)"><span class="nav-icon">&#127873;</span><span class="nav-label">Recompenses</span></button>
-  <button class="nav-item" onclick="sP2('scan',this)"><span class="nav-icon">&#128247;</span><span class="nav-label">QR Code</span></button>
-  <button class="nav-item" onclick="sP2('profile',this)"><span class="nav-icon">&#128100;</span><span class="nav-label">Profil</span></button>
+  <button class="nav-item active" onclick="showPage('home',this)"><span class="nav-icon">&#127968;</span><span class="nav-label">Accueil</span></button>
+  <button class="nav-item" onclick="showPage('rewards',this)"><span class="nav-icon">&#127873;</span><span class="nav-label">Recompenses</span></button>
+  <button class="nav-item" onclick="showPage('scan',this)"><span class="nav-icon">&#128247;</span><span class="nav-label">QR Code</span></button>
+  <button class="nav-item" onclick="showPage('profile',this)"><span class="nav-icon">&#128100;</span><span class="nav-label">Profil</span></button>
 </nav>
 
 <script>
-var st={pts:247,v:12,sv:18,h:[{i:'Mitraillette Gyros',d:'22 Mar 2026',p:7},{i:'Grillade',d:'18 Mar 2026',p:17},{i:'Specialite',d:'10 Mar 2026',p:9},{i:'Frites',d:'4 Mar 2026',p:5}]};
-var rw=[{e:'&#127839;',n:'Frites offertes',c:300},{e:'&#129380;',n:'Boisson offerte',c:400},{e:'&#129382;',n:'Snack simple',c:500},{e:'&#127806;',n:'Mitraillette',c:750},{e:'&#129385;',n:'Grillade offerte',c:1200},{e:'&#128081;',n:'Menu complet',c:2000}];
-function uI(){
-  var p=st.pts;
-  document.getElementById('pD').textContent=p;
-  document.getElementById('rP').textContent=p+' pts';
-  document.getElementById('sP').textContent=p;
-  document.getElementById('sV').textContent=st.v;
-  document.getElementById('sSv').textContent=st.sv;
-  var lv='Membre Bronze';
-  if(p>=2000)lv='Membre Platine';
-  else if(p>=600)lv='Membre Or';
-  else if(p>=400)lv='Membre Argent';
-  document.getElementById('lB').textContent=lv;
-  document.getElementById('pBadge').textContent=lv;
-  var nx=rw.find(function(r){return r.c>p;});
-  if(nx){
-    document.getElementById('nRN').innerHTML=nx.e+' '+nx.n;
-    document.getElementById('nRP').textContent=nx.c+' pts';
-    var i=rw.indexOf(nx);
-    var b=i>0?rw[i-1].c:0;
-    document.getElementById('pB').style.width=Math.min(100,Math.round(((p-b)/(nx.c-b))*100))+'%';
-    document.getElementById('pT').textContent=p+'/'+nx.c+' encore '+(nx.c-p)+' pts';
+var state = {
+  pts: 247, v: 12, sv: 18,
+  h: [
+    {i:"Mitraillette Gyros", d:"22 Mar 2026", p:7},
+    {i:"Grillade Mixte",     d:"18 Mar 2026", p:17},
+    {i:"Specialite Boeuf",   d:"10 Mar 2026", p:9},
+    {i:"Frites maison",      d:"4 Mar 2026",  p:5}
+  ]
+};
+var rewards = [
+  {e:"&#127839;", n:"Frites offertes",  c:300},
+  {e:"&#129380;", n:"Boisson offerte",  c:400},
+  {e:"&#127829;", n:"Snack simple",     c:500},
+  {e:"&#127806;", n:"Mitraillette",     c:750},
+  {e:"&#129385;", n:"Grillade offerte", c:1200},
+  {e:"&#128081;", n:"Menu complet",     c:2000}
+];
+
+function updateUI() {
+  var p = state.pts;
+  document.getElementById("pD").textContent = p;
+  document.getElementById("rP").textContent = p + " pts";
+  document.getElementById("sP").textContent = p;
+  document.getElementById("sV").textContent = state.v;
+  document.getElementById("sSv").textContent = state.sv;
+  var lv = "Membre Bronze";
+  if (p >= 2000) lv = "Membre Platine";
+  else if (p >= 600) lv = "Membre Or";
+  else if (p >= 400) lv = "Membre Argent";
+  document.getElementById("lB").textContent = lv;
+  document.getElementById("pBadge").textContent = lv;
+  var nx = rewards.find(function(r){ return r.c > p; });
+  if (nx) {
+    document.getElementById("nRN").innerHTML = nx.e + " " + nx.n;
+    document.getElementById("nRP").textContent = nx.c + " pts";
+    var i = rewards.indexOf(nx);
+    var b = i > 0 ? rewards[i-1].c : 0;
+    document.getElementById("pB").style.width = Math.min(100, Math.round(((p-b)/(nx.c-b))*100)) + "%";
+    document.getElementById("pT").textContent = p + "/" + nx.c + " encore " + (nx.c-p) + " pts";
   }
-  rR();
+  renderRewards();
 }
-function rR(){
-  document.getElementById('rG').innerHTML=rw.map(function(r){
-    var ok=st.pts>=r.c;
-    return '<div class="reward-card'+(ok?' unlocked':'')+'" onclick="cR('+r.c+',''+r.n+'')">'
-      +'<div class="reward-emoji">'+r.e+'</div>'
-      +'<div class="reward-card-name">'+r.n+'</div>'
-      +'<div class="reward-cost">'+r.c+' pts</div>'
-      +(ok?'<div style="font-size:10px;color:var(--gold);margin-top:4px">Utiliser</div>'
-          :'<div style="font-size:10px;color:#555;margin-top:4px">Encore '+(r.c-st.pts)+' pts</div>')
-      +'</div>';
-  }).join('');
+
+function renderRewards() {
+  document.getElementById("rG").innerHTML = rewards.map(function(r) {
+    var ok = state.pts >= r.c;
+    var sub = ok ? "<div style=\"font-size:10px;color:#D8C286;margin-top:4px\">Utiliser</div>"
+                 : "<div style=\"font-size:10px;color:#555;margin-top:4px\">Encore " + (r.c - state.pts) + " pts</div>";
+    return "<div class=\"reward-card" + (ok ? " unlocked" : "") + "\" onclick=\"claimReward(" + r.c + ",'" + r.n + "')\"><div class=\"reward-emoji\">" + r.e + "</div><div class=\"reward-card-name\">" + r.n + "</div><div class=\"reward-cost\">" + r.c + " pts</div>" + sub + "</div>";
+  }).join("");
 }
-function rH(){
-  document.getElementById('hL').innerHTML=st.h.map(function(h){
-    return '<div class="history-item"><div><div style="font-size:13px;font-weight:600">'+h.i+'</div><div style="font-size:11px;color:var(--text);margin-top:3px">'+h.d+'</div></div><div class="h-pts">+'+h.p+'</div></div>';
-  }).join('');
+
+function renderHistory() {
+  document.getElementById("hL").innerHTML = state.h.map(function(h) {
+    return "<div class=\"history-item\"><div><div style=\"font-size:13px;font-weight:600\">" + h.i + "</div><div style=\"font-size:11px;color:#666;margin-top:3px\">" + h.d + "</div></div><div class=\"h-pts\">+" + h.p + "</div></div>";
+  }).join("");
 }
-function aP(amt,itm){
-  var p=Math.round(amt);
-  st.pts+=p;st.v++;
-  st.h.unshift({i:itm,d:new Date().toLocaleDateString('fr-FR',{day:'numeric',month:'short',year:'numeric'}),p:p});
-  if(st.h.length>10)st.h.pop();
-  var el=document.getElementById('pD');
-  el.classList.remove('pulse');void el.offsetWidth;el.classList.add('pulse');
-  uI();rH();sT('+'+p+' points !');
+
+function addPoints(amount, item) {
+  var pts = Math.round(amount);
+  state.pts += pts;
+  state.v++;
+  var d = new Date().toLocaleDateString("fr-FR", {day:"numeric", month:"short", year:"numeric"});
+  state.h.unshift({i: item, d: d, p: pts});
+  if (state.h.length > 10) state.h.pop();
+  var el = document.getElementById("pD");
+  el.classList.remove("pulse"); void el.offsetWidth; el.classList.add("pulse");
+  updateUI(); renderHistory(); showToast("+" + pts + " points !");
 }
-function cR(c,n){
-  if(st.pts<c){sT('Pas assez de points');return;}
-  if(!confirm('Utiliser '+c+' pts pour '+n+'?'))return;
-  st.pts-=c;uI();sT('Recompense: '+n);
+
+function claimReward(cost, name) {
+  if (state.pts < cost) { showToast("Pas assez de points"); return; }
+  if (!confirm("Utiliser " + cost + " pts pour " + name + " ?")) return;
+  state.pts -= cost;
+  updateUI(); showToast("Recompense: " + name);
 }
-function sS(){
-  var its=['Mitraillette Boeuf','Specialite Gyros','Grillade Mixte','Durum Tenders'];
-  var ps=[7,8,17,8];
-  var i=Math.floor(Math.random()*4);
-  aP(ps[i],its[i]);
+
+function simulateScan() {
+  var its = ["Mitraillette Boeuf","Specialite Gyros","Grillade Mixte","Durum Tenders","Pain turc Poulet"];
+  var ps  = [7, 8, 17, 8, 7];
+  var i   = Math.floor(Math.random() * 5);
+  addPoints(ps[i], its[i]);
 }
-function sT(m){
-  var t=document.getElementById('toast');
-  t.textContent=m;t.classList.add('show');
-  setTimeout(function(){t.classList.remove('show');},2500);
+
+function showToast(msg) {
+  var t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  setTimeout(function(){ t.classList.remove("show"); }, 2500);
 }
-function sP2(n,b){
-  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});
-  document.querySelectorAll('.nav-item').forEach(function(x){x.classList.remove('active');});
-  document.getElementById('page-'+n).classList.add('active');
-  b.classList.add('active');
+
+function showPage(name, btn) {
+  document.querySelectorAll(".page").forEach(function(p){ p.classList.remove("active"); });
+  document.querySelectorAll(".nav-item").forEach(function(n){ n.classList.remove("active"); });
+  document.getElementById("page-" + name).classList.add("active");
+  btn.classList.add("active");
 }
-uI();rH();
+
+updateUI(); renderHistory();
 </script>
 </body>
 </html>
